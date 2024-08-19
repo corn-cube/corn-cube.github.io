@@ -1,11 +1,10 @@
-fetch("https://jsonplaceholder.typicode.com/todos", {
-    method: "POST",
-    body: JSON.stringify({
-        userId: 1,
-        title: "Fix my bugs",
-        completed: false
-    }),
-    headers: {
-        "Content-type": "application/json; charset=UTF-8"
-    }
-});
+var ws = new WebSocket("wss://echo.websocket.org/")
+
+ws.onopen = () => {
+    ws.send("Sussy Wussinger!" + new Date().toString());
+}
+ws.onmessage = console.log;
+
+// ws.onclose= console.log;
+// ws.onopen = console.log;
+// ws.onopen = console.log;
