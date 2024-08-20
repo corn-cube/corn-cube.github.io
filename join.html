@@ -11,10 +11,10 @@
 		<link rel="modulepreload" href="./_app/immutable/entry/app.DYnRTNdI.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.DEjcK-S_.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.D-1-qz3j.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.5FZbsmpS.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.GMPbYfNa.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <h1 data-svelte-h="svelte-yyjjjs">Welcome to SvelteKit</h1> <p data-svelte-h="svelte-jl9sbz">Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p> <a href="/join" data-svelte-h="svelte-2swwfp">Join game here</a> 
+		<div style="display: contents">  <p data-svelte-h="svelte-17khjtn">Enter lobby code:</p> <form data-svelte-h="svelte-11mstm6"><input id="code" type="text" maxlength="4" placeholder="Lobby code" required pattern="[a-zA-Z0-9]+"> <button type="submit">Join Lobby</button></form> <a href="/" data-svelte-h="svelte-1x5ec6i">Go back</a> <div hidden data-svelte-h="svelte-1r8hnvt"><p>Lobby code appears invalid, please try again</p> <p>Lobby codes are 4 characters long and must contain Letters and numbers only.</p></div> 
 			
 			<script>
 				{
@@ -31,7 +31,7 @@
 						import("./_app/immutable/entry/app.DYnRTNdI.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 2],
+							node_ids: [0, 3],
 							data,
 							form: null,
 							error: null
